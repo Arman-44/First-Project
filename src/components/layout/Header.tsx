@@ -7,10 +7,10 @@ export default function Header() {
     return (
         <>
             <header>
-                <div className="container">
+                <div className="layout-container flex gap-[60] items-center">
                     <Logo />
-                    <nav>
-                        <ul>
+                    <nav className="w-[40%]">
+                        <ul className="flex justify-between gap-4">
                             {navigationLinks.map((e) => (
                                 <li key={e.name}>
                                     <Link href={e.href}>
@@ -20,6 +20,11 @@ export default function Header() {
                             ))}
                         </ul>
                     </nav>
+                    <Link 
+                    href='/contact'
+                    className="primary-btn">
+                        Talk to humman
+                    </Link>
                 </div>
             </header>
         </>

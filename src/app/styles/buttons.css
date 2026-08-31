@@ -1,0 +1,34 @@
+
+
+
+@utility default-btn {
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#FFF;
+    border-radius: 4px;
+    padding: 0 40px;
+    transition: transform 300ms ease;
+    :hover {
+        transform: scale(1.05)
+    }
+}
+
+@utility primary-btn {
+    @apply default-btn;
+    background-color: var(--color-primary);
+}
+
+@utility border-primary-btn {
+    @apply default-btn;
+    background-color: transparent;
+    border: 1px solid var(--color-primary);
+    color:var(--color-primary);
+}
+
+@utility border-white-btn {
+    @apply default-btn;
+    background-color: transparent;
+    border: 1px solid #FFF;
+}
