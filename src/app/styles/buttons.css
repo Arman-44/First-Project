@@ -2,13 +2,15 @@
 
 
 @utility default-btn {
+    width: min-content;
     height: 52px;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-wrap: nowrap;
     color:#FFF;
     border-radius: 4px;
-    padding: 0 40px;
+    padding: 10px 40px;
     transition: transform 300ms ease;
     :hover {
         transform: scale(1.05)

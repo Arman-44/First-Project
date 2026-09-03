@@ -6,11 +6,11 @@ export default function Header() {
 
     return (
         <>
-            <header>
-                <div className="layout-container flex gap-[60] items-center">
+            <header className="text-white absolute w-full py-7.5 font-bold">
+                <div className="layout-container flex gap-[60] items-center justify-between">
                     <Logo />
-                    <nav className="w-[40%]">
-                        <ul className="flex justify-between gap-4">
+                    <nav className="w-full flex items-center justify-between">
+                        <ul className="flex justify-between gap-10">
                             {navigationLinks.map((e) => (
                                 <li key={e.name}>
                                     <Link href={e.href}>
@@ -19,12 +19,12 @@ export default function Header() {
                                 </li>
                             ))}
                         </ul>
+                        <Link
+                            href='/contact'
+                            className="primary-btn">
+                            Talk to humman
+                        </Link>
                     </nav>
-                    <Link 
-                    href='/contact'
-                    className="primary-btn">
-                        Talk to humman
-                    </Link>
                 </div>
             </header>
         </>

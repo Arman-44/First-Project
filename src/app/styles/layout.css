@@ -1,8 +1,20 @@
 
 
 @utility layout-container {
-    max-width: 1230px;
+    @apply container mx-auto px-4
+}
+
+@utility layout-section {
     width: 100%;
-    margin: 0 auto;
-    padding: 0 4px;
+    min-height: 100vh;
+    padding: 30px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@utility icon-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }

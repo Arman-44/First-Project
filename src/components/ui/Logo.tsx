@@ -6,11 +6,11 @@ export default function Logo() {
     return (
         <>
             <Link href="/" className="inline-flex items-center focus:outline-none group">
-                <span className="sr-only">Createx</span>
-                <span className="flex items-center font-black text-xl text-white tracking-wider">
-                    Create
+                <span className="sr-only"></span>
+                <span className="flex items-center font-bold text-white  text-[2em]">
+                    CREATE
                     <svg
-                        className="w-[1.1em] h-[1.1em] ml-0.5 transition-transform duration-300 group-hover:rotate-12"
+                        className="w-[0.8em] h-[1em] ml-0.5 transition-transform duration-300 group-hover:rotate-12"
                         viewBox="0 0 22 20"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"

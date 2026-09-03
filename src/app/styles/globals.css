@@ -13,10 +13,30 @@
 }
 
 @theme {
-  --color-primary:#7772F1
+  --color-primary: #7772F1;
+  --background-image-hero-pattern: url('/images/hero-bg-vectors.svg');
+  --my-divider-gradient:linear-gradient(91deg,rgba(218, 219, 221, 0) 0%, rgba(218, 219, 221, 0.5) 25%, rgba(218, 219, 221, 1) 50%, rgba(218, 219, 221, 0.5) 75%, rgba(218, 219, 221, 0) 100%);
+  --background-image-main-pattern:url('/images/main-background.svg')
 }
 
 
+@utility divide-linear {
+  & > hr {
+    width: 3px;
+    height: 100%;
+    background-image: var(--my-divider-gradient);
+    border: none;
+  }
+}
+
+@utility before-mark {
+  &::before {
+    content: url('/icons/mark.svg');
+    display: block;
+    width: 16px;
+    height: 16px;
+  }
+}
 
 
 
