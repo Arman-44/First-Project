@@ -11,7 +11,7 @@ export default function ServiceCard({ change }: { change: string }) {
         <section className={`w-full h-125 flex items-center justify-center ${content?.reverse}`}>
             {content ?
                 <>
-                    <div className="max-w-xl grid grid-cols-[min-content_260px] gap-y-12 gap-x-4">
+                    <div className="max-w-xl grid grid-cols-[min-content_350px] gap-y-12 gap-x-4">
                         <h2 className="col-span-2 text-2xl font-black">{content.title}</h2>
                         <p className="col-span-2 font leading-[160%]">{content.text}</p>
                         <Link href={'#'} className="border-primary-btn ">
