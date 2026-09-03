@@ -1,9 +1,9 @@
 import Clients from "@/components/modules/clients/Clients";
-import Hero from "./_compnents/hero/Hero";
-import Info from "./_compnents/info/Info";
-import About from "./_compnents/about/About";
-import Figures from "./_compnents/figures/Figures";
-import Services from "./_compnents/services/Servisec";
+import Hero from "./_components/hero/Hero";
+import Info from "./_components/info/Info";
+import About from "./_components/about/About";
+import Figures from "./_components/figures/Figures";
+import Services from "./_components/services/Service";
 
 export default function Home() {
   return (

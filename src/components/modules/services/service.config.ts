@@ -4,12 +4,6 @@ import bgResearch from '@/assets/bg-services/bg-research.svg'
 import bgTraffic from '@/assets/bg-services/bg-traffic.svg'
 import bgContentPr from '@/assets/bg-services/bg-content-pr.svg'
 
-interface ServiceContetType {
-    change:string,
-    title:string,
-    text:string,
-    image:string,
-}
 
 interface ServiceNavType {
     name: string,
@@ -40,6 +34,13 @@ export const serviceNav: ServiceNavType[] = [
     },
 ]
 
+interface ServiceContetType {
+    change:string,
+    title:string,
+    text:string,
+    image:string,
+    reverse?:string,
+}
 
 export const serviceContent:ServiceContetType[] = [
         {
@@ -53,6 +54,7 @@ export const serviceContent:ServiceContetType[] = [
             title:'Research Service',
             text:'Volutpat tellus mauris sit sit. Posuere ut sit vestibulum amet viverra in. Est nulla lectus purus tincidunt massa tortor. Hendrerit vulputate elementum blandit massa vitae amet felis eget. ',
             image:bgResearch,
+            reverse:'flex-row-reverse',
         },  
         {
             change:'content',
@@ -65,6 +67,7 @@ export const serviceContent:ServiceContetType[] = [
             title:'Payed Traffic Management',
             text:'Tortor vitae orci hendrerit lobortis eu. Metus aliquam sem tellus ut fringilla purus nisl, consectetur netus. Velit ac feugiat ut mattis dis nullam ultrices amet. Lacus eu neque arcu arcu curabitur at sapien. Id sed aliquet id sit nibh ornare massa scelerisque.',
             image:bgTraffic,
+            reverse:'flex-row-reverse',
         },  
 ]
 

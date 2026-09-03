@@ -8,12 +8,12 @@ export default function ServiceCard({ change }: { change: string }) {
     const content = serviceContent.find(e => e.change === change)
 
     return (
-        <section className="w-full h-125 flex items-center justify-center">
+        <section className={`w-full h-125 flex items-center justify-center ${content?.reverse}`}>
             {content ?
                 <>
-                    <div className="max-w-xl grid grid-cols-[180px_180px] gap-x-5 gap-y-12">
+                    <div className="max-w-xl grid grid-cols-[min-content_260px] gap-y-12 gap-x-4">
                         <h2 className="col-span-2 text-2xl font-black">{content.title}</h2>
-                        <p className="col-span-2 font leading-[130%]">{content.text}</p>
+                        <p className="col-span-2 font leading-[160%]">{content.text}</p>
                         <Link href={'#'} className="border-primary-btn ">
                             Learn More
                         </Link>
